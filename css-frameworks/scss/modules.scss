@@ -1,0 +1,387 @@
+section {
+    &:first-child {
+      background-color: $primary-black;
+        height: 80px;  
+    }
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: $primary-grey;
+    text-transform: uppercase;
+    margin: 0px;
+    line-height: 80px;
+}
+
+header {
+    .nav {
+        a {
+            font: 13px 'Fjalla One', sans-serif;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 25px;
+            line-height: 30px;
+            color: $primary-grey;
+        }
+    }
+}
+
+section {
+    &:nth-child(2) {
+    background: url(../img/promo.jpg);
+    background-size: cover;
+    height: 560px;
+    margin-top: 80px;
+    }
+}
+
+.promo {
+    position: absolute;
+    top: 52%;
+    a { 
+        display: inline-block;
+        width: 33px;
+        height: 69px;
+        background: $primary-red;
+        cursor: pointer;
+        border-radius: 35px 0 0 35px;
+        &:nth-child(2) {
+            border-radius: 0 35px 35px 0;
+            margin-left: 2px;
+        }
+    }
+    .row {
+        &:first-child {
+            padding-left: 15px;
+        }
+        &:nth-child(2) {
+            margin-top: 14px;
+            div {
+                height: 29px;
+                border-bottom: 2px solid $primary-grey;
+                margin-left: -75px;
+                width: 252px;
+            }
+        }
+        &:nth-child(3) {
+            margin-bottom: 12px;
+        }
+    }
+    span {
+        color: $primary-red;
+        font: 15px 'Fjalla One', sans-serif;
+        letter-spacing: 0.08em;
+    }
+
+}
+
+.glyphicon-chevron-left {
+    line-height: 55px;
+    font-size: 15px;
+    color: $primary-black;
+    margin-left: -4px;
+}
+
+.glyphicon-chevron-right {
+    @extend .glyphicon-chevron-left;
+
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.08em;
+    color: $primary-grey;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+ h3 {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+section {
+    &:nth-child(3) {
+        background-color: $primary-grey;
+        padding: 80px 0;
+    }
+}
+
+.article {
+    span {
+        width: 70px;
+        height: 70px;
+        background-color: $primary-red;
+        border-radius: 50%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    i {
+        font-size: 26px;
+        color: #fff;
+        line-height: 70px;
+    }
+     h3 {
+        font-family: 'Fjalla One', sans-serif;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $primary-black;
+        margin: 0;
+        line-height: 70px;
+    }
+    p {
+        font: 14px 'Lato', sans-serif;
+        letter-spacing: 0.024em;
+        line-height: 24px;
+        color: $brand-p;
+    }
+}
+
+section {
+    &:nth-child(4) {
+        background-color: #fff;
+        padding: 80px 0;
+    }
+    img {
+        width: 354px;
+        height: 354px;
+        border-radius: 50%;
+        margin-left: 15px;
+    }
+    h3 {
+        @extend h3;
+        color: $primary-black;
+        margin: 0 0 10px -15px;
+    }
+    h4 {
+        font-family: 'Lato', sans-serif;
+        line-height: 24px;
+        color: $primary-red;
+        border-bottom: 1px solid $primary-grey;
+        padding-bottom: 12px;
+        margin-left: -15px;
+    }
+    h5 {
+        font-family: 'Lato', sans-serif;
+        line-height: 24px;
+        font-weight: 900;
+    }
+    p {
+        @extend h5;
+        font-weight: 400;
+        color: $brand-p;
+    }
+    .btn {
+        margin-top: 28px;
+        text-transform: uppercase;
+        font: 14px 'Oswald', sans-serif;
+    }
+}
+
+section {
+    &:nth-child(5)> div {
+        background-color: $primary-red;
+        border-radius: 5px;
+        padding: 50px 0;
+        span {
+            width: 70px;
+            height: 70px;
+            background-color: $primary-black;
+            border-radius: 50%;
+            text-align: center;
+            display: inline-block;
+            .glyphicon {
+                font-size: 26px;
+                color: #fff;
+                line-height: 70px;
+            }
+        }
+        blockquote {
+            border: none;
+            h3 {
+            @extend h3;
+            color: #fff;
+            margin: 0 0 10px;
+            }
+            q {
+            font: 16px 'Lato', sans-serif;
+            line-height: 24px;
+            color: #fff;   
+            }
+        }
+        .subs {
+            h3 {
+                @extend h3;
+                color: #fff;
+                margin: 0 0 30px;
+            }
+        }
+    }
+}
+
+.author {
+    font: 14px 'Lato', sans-serif;
+    line-height: 24px;
+    color: #fff;
+    font-style: italic;
+}
+
+.input-group {
+    input {
+        border-radius: 20px;
+        border: none;
+        height: 40px;
+        @extend .author;
+        color: $primary-grey;
+    }
+    button {
+        margin: 0 10px;
+        height: 40px;
+        i {
+            margin-left: 5px;
+        }
+    }
+}
+
+section {
+    &:nth-child(6)> div {
+        padding: 70px 0 55px;
+    }
+    h3 {
+        margin: 0 0 30px; 
+    }
+    &:nth-child(6) {
+        .row {
+        border-top: 1px solid $primary-grey;
+        padding: 30px 0;
+        &:last-child {
+            border-bottom: 1px solid $primary-grey;
+        }
+        }
+    }
+    address {
+        i {
+            font-size: 30px;
+        }
+        span {
+            @extend .author;
+            font-weight: bold;
+            color: $primary-red;
+            font-style: normal;
+        }
+        a {
+            @extend p;
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+}
+
+.snippets {
+    img {
+        width: 70px;
+        height: 70px;
+        margin: 0;
+    }
+    a {
+        @extend .author;
+        color: $primary-red;
+        font-style: normal;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.query {
+    > div {
+        background-color: $primary-grey;
+        padding: 24px 30px;
+        border-radius: 5px;
+    }
+    .input-group {
+        padding-top: 30px;  
+        input {
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        
+        textarea {
+            @extend input;
+            border-radius: 5px;
+            height: 80px;
+        }
+        button {
+            margin: 0;
+        }
+    }
+}
+
+#bootstrap-override footer {
+    padding: 80px 0;
+    background-color: $primary-black;
+    & > div .container {
+        padding-left: 0;
+    }
+    .footer-menu {
+        .navbar-nav>li>a {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+.footer-menu {
+    a {
+        @extend .author;
+        position: relative;
+        color: $primary-grey;
+        font-style: normal;
+        display: block;
+    }
+    li {
+        margin-right: 5px;
+        &:not(:last-child)::after {
+        content: "/";
+        color: $brand-p;
+        position: absolute;
+        right: -5px;
+        top: 0;
+        display: inline-block;
+        font-size: 14px;
+        }
+    }
+}
+
+.links {
+    padding-left: 15px;
+    p {
+        margin: 0;
+        @extend .author;
+        font-style: normal;
+        color: $brand-p;
+        span {
+            color: $primary-red;
+        }
+        & > a {
+            color: $brand-p;
+        }
+    }
+}
+
+.social {
+    a {
+        width: 42px;
+        height: 42px;
+        background-color: $primary-red;
+        border-radius: 50%;
+        text-align: center;
+        display: block;
+        i {
+            line-height: 42px;
+            font-size: 25px;
+            color: #fff;
+        }
+    }
+}

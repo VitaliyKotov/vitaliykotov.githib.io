@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    width: 1024px;
+    margin: 10px auto 73px;
+}
+
+a,
+figure {
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+a:hover, a:focus {
+    cursor: pointer;
+    background-color: #324597;
+}
+
+figure:hover {
+    box-shadow: 0px 0px 21px 3px rgba(50, 50, 50, 0.3);
+}
+
+header {
+    background-color: #4c5eab;
+    min-height: 252px;
+    border-bottom: 2px solid #8086c1;
+}
+
+header > div {
+    display: inline-block;
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+    overflow: hidden;
+    margin: 63px 28px 10px 80px;
+}
+
+.contacts, 
+.name {
+    vertical-align: top;
+    color: #ffffff;
+}
+.contacts {
+    margin-top: 60px;
+    width: 200px;
+    display: inline-block;
+}
+.name {
+    width: 516px;
+    margin-top: 67px;
+}
+
+.name h1 {
+    font: 40px 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.name h2 {
+    font: 23px 'Open Sans', sans-serif;
+    margin-top: 0px;
+} 
+
+.contacts > a {
+    font: 19px 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    line-height: 36px;
+}
+
+.contacts a:nth-child(3) {
+    margin-left: 33px;
+    color: #ffffff;
+    font-size: 17px;
+}
+.fa,
+footer a {
+    color: #ffffff;
+}
+.fa:before {
+    margin-right: 15px;
+}
+
+main {
+    overflow: hidden;
+    font-size: 0;
+}
+
+main:after {
+    content: '';
+    clear: both;
+}
+
+aside,
+section {
+    padding-bottom: 50em;
+    margin-bottom: -50em;
+    float: left;
+}
+
+aside {
+    width: 345px;
+    background-color: #fafafa;
+    border-right: 2px solid #f8f8f8;
+    padding: 30px 10px 0 70px;
+}
+
+aside > div:not(:first-child) {
+    margin-top: 37px;
+}
+
+h3 {
+    font: 23px 'Montserrat', sans-serif;
+    font-weight:500;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin-bottom: 18px;
+}
+
+h3:before {
+    content: '';
+    background: url(../img/sprite.png) no-repeat -114px 2px;
+    width: 45px;
+    height: 45px;
+    float: left; 
+    margin: 0 20px 2px 0; 
+    background-color: #4c5eab;
+    border-radius: 50%;
+}
+
+.info p,
+.int p {
+    font: 17px 'Montserrat', sans-serif;
+    line-height: 29px;
+}
+
+.int > div {
+    display: inline-block;
+}
+
+.int > div > * {
+    display: block;
+}
+
+.int2 {
+    margin: 0 30px 0;
+}
+
+.int span {
+    background-image: url(../img/sprite.png);
+    width: 55px;
+    height: 55px;
+    border: 7px solid #4c5eab;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.int1 span { 
+    background-position: -5px -4px;
+}
+
+.int2 span {
+    background-position: -46px -3px;
+}
+
+.int3 span {
+    background-position: -82px 1px;
+}
+
+.int p {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.ref div {
+    margin: 0 0 40px 40px;
+    position: relative;
+}
+
+.ref div:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 34px;
+    left: -34px;
+    width: 8px;
+    height: 8px;
+    border: 8px solid #999695;
+    border-radius: 50%;
+}
+
+.ref div:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 58px;
+    left: -23px;
+    height: 104px;
+    border-left: 2px solid #999695;
+}
+.ref div:last-child:after {
+    display: none;
+}
+
+.ref p,
+.ref a,
+figcaption a:nth-child(2),
+footer p {
+    font: 18px 'Open Sans', sans-serif;
+    margin-bottom: 8px;
+}
+
+.ref a {
+    font-weight: 600;
+    display: block;
+    color: #b9bcdf;
+}
+
+.award p,
+figcaption a:first-child {
+    font: 18px 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+section {
+    width: 679px;
+    background-color: #ffffff;
+    padding: 30px 66px 0 20px;
+}
+
+.container > div {
+    display: inline-block;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 19px 1px rgba(50, 50, 50, 0.2);  
+} 
+
+.container > div:nth-child(odd) {
+    margin-left: 80px;
+}
+
+.container > div:nth-child(even) {
+    margin-left: 28px;
+}
+
+figure {
+    width: 235px;
+    height: 260px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figcaption a {
+    display: block;
+
+}
+
+figcaption a:first-child,
+figcaption a:nth-child(2) {
+    color: black;
+    margin: 15px 0 0; 
+}
+
+footer {
+    min-height: 73px;
+    background-color: #4d5fab; 
+    position: absolute;
+    left: 50%;
+    margin-left: -512px;
+    bottom: 0;
+    width: 1024px;
+}
+
+footer p {
+    position: relative;
+    top: 27px;
+    left: 10px;
+    color: #ffffff;
+}
